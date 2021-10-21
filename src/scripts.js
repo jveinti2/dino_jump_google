@@ -7,6 +7,6 @@ document.addEventListener('click', function () {
 })
 player.addEventListener('animationend', () => {
     player.classList.remove('player_jump');
-  });
+});
 
   
