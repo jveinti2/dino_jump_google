@@ -12,9 +12,13 @@
     width: 70px;
     height: 70px;
     position: absolute;
-    left: 50px;
-    bottom: 50px;
+    left: 100px;
+    bottom: 213px;
 }
+.player_jump {
+    animation: playerJump 1s linear;
+}
+
 #player img {
     width: 100%;
     height: 100%;
@@ -23,9 +27,25 @@
 #background {
     width: 100%;
     height: 100%;
+    background:url(./assests/background.png);
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-size: auto 100%;
+    animation: backgroundMove 25s linear infinite;
 }
-#background img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+@keyframes playerJump {
+    0% {
+        bottom: 213px; 
+    }
+    45%, 55%{
+        bottom: 313px;
+    }
 }
+@keyframes backgroundMove {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -10000px 0;
+    }
+  }
