@@ -29,7 +29,7 @@
     }
 }
 .player_jump {
-    animation: playerJump 1s linear;
+    animation: playerJump 1s ;
 }
 #background {
     width: 100%;
