@@ -7,3 +7,12 @@ document.addEventListener('click', function () {
 player.addEventListener('animationend', () => {
     player.classList.remove('player_jump');
 });
+
+//Funcionalidad del score//
+
+let score = 0;
+
+setInterval(() => {
+    score++;
+    document.getElementById('score').innerText = score;
+}, 1000);
